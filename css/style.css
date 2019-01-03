@@ -1,0 +1,179 @@
+  body{
+    background-color: rgb(247, 221, 238);
+  }
+    .navbar-nav .sub-menu{
+      position: absolute;
+      top: 35px;
+      z-index: 1000;
+      font-size: 15px;
+    }
+    .navbar-nav .sub-menu>li{
+      min-width: 100px;
+      margin: 15px;
+    }
+    .navbar-nav .sub-menu>li>a{
+      color: white;
+    }
+    .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      min-height: 200px;
+    }
+
+    
+    .navbar-light{
+      margin-top: 7px;
+    }
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none; 
+      }
+    }
+    @media (min-width: 768px){
+      #containerTop5{
+        grid-column-start: 1; 
+        grid-row-start: 2; 
+        grid-row-end: 3;
+      }
+
+      .navbar-nav {
+        float: left;
+        margin: 0 36px;
+    }
+    }
+    .nav navbar-nav{
+      margin: 0 36px;
+    }
+    
+    /* Đặt màu nền đen chữ màu trắng và một số phần đệm */
+  footer {
+    background-color:rgb(26, 24, 25);
+    color: rgb(243, 215, 231);
+    padding: 10px;
+    position: relative;
+  }
+    #image{
+      float: left;
+      padding: 20px;
+  }
+  #LienHe{
+      color: black;
+      position: relative;
+      float:left;
+  }
+  #text{
+      text-align: left;
+      color: white;
+  }
+  .h2, h2 {
+    font-size: 27px;
+    margin-top: -4px;
+    color: deeppink;
+}
+  
+  .title1{
+      color:deeppink;
+      text-align:left;
+  }
+  .title2{
+    color: deepskyblue;
+    text-align: left;
+  }
+  .title3{
+    color: rgb(74, 211, 69);
+    text-align: left;
+  }
+.text1{
+  color: rgb(141, 46, 46);
+}
+ul.nav.navbar-nav.navbar-right {
+  position: absolute;
+  right: 2%;
+}
+/*CSS Style cho Submenu*/
+ul li ul {
+	position: absolute;
+	width: auto;
+	display: none;
+	background-color: #252525;
+	border-bottom: 0px solid #0082bb;
+	padding-left: 5px;
+  margin-left: auto;
+}
+ul li ul li{
+	display: block;
+	padding:0;
+	margin: 0;
+	float: none; /*Bỏ float cho li cấp thứ 2*/
+}
+/* Hover cho submenu */
+ ul li:hover {
+	/* Hover thì li sẽ đổi màu*/
+	background-color: #252525;
+}
+ ul li:hover ul{
+	/*Display ra submenu*/
+	display: block;
+}
+/* ------------------------- */
+#containerTop5 {
+  padding: 0.1em 0.5em;
+  font-weight: 400;
+  font-style: normal!important;
+  font-size: 15px;
+  font-family: Arial;
+  line-height: 3;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: flex;
+}
+#containerTop5>ul>li> a {
+  display: block;
+  background-image: url("../data/s2.jpg");
+  background-size: cover;
+}
+.listTop5 li div {
+  position: absolute;
+  top: 19px;
+  left: 98px;
+}
+.listTop5 {
+  border-radius: 5px 5px 5px 5px;
+  margin: 0;
+  padding: 0;
+}
+ul, menu, dir {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+/* ------------ */
+.listTop5 .baihat-1 {
+  background-image: url(../image/khoimy.jpg );
+}
+.listTop5 .baihat {
+  width: 70px;
+  height: 70px;
+  background-color: blue;
+  background-size: cover;
+  margin-right: 10px;
+}
+.listTop5 li a {
+  text-decoration: none;
+}
+.listTop5 li {
+  position: relative;
+  display: flex;
+  margin-bottom: 5px;
+}
+a {
+  color: purple;
+}
+ul li:hover {
+  background-color: #62b8e8;
+}

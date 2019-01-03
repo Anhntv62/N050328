@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Website Music</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" type="text" href="..xampp/htdocs/music/css/style.css"/> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/player.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery-1.7.2.min.js"></script>
+  <script src="../js/jquery-ui-1.8.21.custom.min.js"></script>
+  <script src="../js/playerMp3.js"></script>
+</head>
+
+<body>
+    <div class="containerMP3">
+        <div class="player">
+            <div class="pl"></div>
+            <marquee class="title" width = "115px" behavior = "alternate" scrollamount = "1" ></marquee>
+            <div class="artist"></div>
+            <div class="cover"></div>
+            <div class="controls">
+                <div class="play"></div>
+                <div class="pause"></div>
+                <div class="rew"></div>
+                <div class="fwd"></div>
+            </div>
+            <div class="volume"></div>
+            <div class="tracker"></div>
+        </div>						
+        <ul id = "addList" class="playlist hidden">
+        </ul>
+    </div>
+
+    <div class ="containerMP3" style = "display:none">
+        <ul class="playlist">
+          <li audiourl="https://5berone.000webhostapp.com/data/vn/hanhphuctroixa.mp3"
+            cover="vn/s2.jpg" artist="Nguyễn Vân Anh 58TH2">Hạnh phúc trôi xa</li>
+        </ul>	
+    </div>
+</body>
+
+</html>

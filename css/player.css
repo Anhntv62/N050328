@@ -1,0 +1,180 @@
+﻿.playerMini{
+	width: 322px;
+}
+.playerMini .player{
+    background-color: #00688B;
+	border-radius: 15px;
+    height: 31px;
+    width: 100%;
+	margin: 2px auto;
+	position: relative;
+	z-index:20;
+}
+.playerMini .title {
+    color: #FFFFFF;
+    font-size: 12px;
+	position: absolute;
+    top: 4px;
+	left: 50px;
+}
+.playerMini .controls {
+    position: absolute;
+    top: 4px;
+	right: 5px;
+}
+.playerMini .player .logoMp3{	
+	width: 30px;
+	height: 30px;
+	background-image: url("../images/player/blue.png");
+	background-size: cover;
+	position: absolute;
+	left: 18px;
+	margin-right:10px;
+}	
+/* mở rộng mp3	player */
+.containerMP3 {
+	width: 100%;
+	border: 1px solid #99CCFF;
+	border-radius: 5px 5px 5px 5px;	
+	box-sizing: border-box;
+}
+.containerMP3 .player {
+    /* background: transparent url("../images/player/spr.png") no-repeat scroll center top; */
+    background-color: rgb(32, 32, 32);
+    position: relative;
+    width: 100%;
+    height: 300px;
+	margin: auto;
+    z-index: 2;
+}
+.containerMP3 .title {
+    font-size: 16px;
+    font-weight: bold;
+	position: absolute;
+    top: 50px;
+	left: 430px;
+    width: 150px;
+    color: white;
+}
+.artist {
+    color: #EEEEEE;
+    font-size: 25px;
+    white-space: nowrap;
+    position: absolute;
+    top: 10px;
+    left: 370px;
+    width: 300px;
+	/* chống tràn chữ ra thẻ */
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.cover {
+    background-size: cover;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    /* -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
+    /* transform: rotate(-45deg); */
+}
+.controls {
+    cursor: pointer;
+    height: 20px;
+    left: 190px;
+    position: absolute;
+    top: 260px;
+    display: flex;
+    margin-left: 125px;
+}
+.controls .play, .controls .pause, .controls .rew, .controls .fwd {
+    /* background: transparent url("../images/player/spr.png") no-repeat scroll 0 0; */
+    /* float: left; */
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    margin-right: 35px;
+}
+.controls .play {
+    background-image: url("../images/player/play.png");
+}
+.controls .pause {
+    background-image: url("../images/player/pause.png");
+    display: none;
+}
+.controls .rew {
+    background-image: url("../images/player/prev.png");
+}
+.controls .fwd {
+    background-image: url("../images/player/next.png");
+}
+.controls .play:hover {
+    background-position: 0 1px;
+}
+.controls .pause:hover {
+    background-position: 0 1px;
+}
+.controls .rew:hover {
+    background-position: 0 1px;
+}
+.controls .fwd:hover {
+    background-position: 0 1px;
+}
+.hidden {
+    display: none;
+}
+.controls .visible {
+    display: block;
+}
+.volume {	
+    height: 3px;
+    left: 40px;
+    position: absolute;
+    top: 266px;
+    width: 107px;
+}
+.tracker {
+    height: 3px;
+    position: absolute;
+    top: 240px;
+	left: 19px;
+    width: 707px;
+    z-index: 100;
+}
+.tracker-default{
+    height: 3px;
+    position: absolute;
+    top: 240px;
+	left: 19px;
+    width: 707px;
+    background-color: white;
+    z-index: 10;
+}
+.ui-slider-range {
+    /* background: transparent url("../images/player/spr.png") no-repeat scroll 0px -222px;
+    height: 100%;
+    position: absolute;
+    top: 0;	 */
+    height: 3px;
+    width: 100%;
+    background-color: #a745dd;
+}
+.ui-slider-handle {
+    cursor: pointer; /* dạng con trỏ*/
+    height: 8px;
+    margin-left: -5px;
+    position: absolute;
+    top: -4.5px;
+    width: 8px;
+    z-index: 2;	
+}
+.volume .ui-slider-handle {
+    background: url("../images/player/spr.png") no-repeat scroll -201px -187px rgba(0, 0, 0, 0);
+    height: 13px;
+    width: 13px;	
+	outline:none; /* bỏ viền khi click */
+}
+.tracker .ui-slider-handle {
+	outline:none; /* bỏ viền khi click */
+}
